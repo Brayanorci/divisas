@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Calculadora de Divisas</string>
+    <string name="header_description">Imagen de Cabecera</string>
+    <string name="label_total">USD - MXN</string>
+    <string name="label_calculator">Calculadora de Divisas</string>
+    <string name="label_origin">ORIGEN</string>
+    <string name="label_destination">DESTINO</string>
+    <string name="hint_amount">Monto:</string>
+    <string name="button_convert">CONVERTIR</string>
+</resources>

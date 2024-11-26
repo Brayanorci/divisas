@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- ImageView para la cabecera -->
+
+    <!-- TextView para mostrar el total -->
+    <ImageView
+        android:id="@+id/iv_header"
+        style="@style/ImageViewStyle"
+        android:layout_width="410dp"
+        android:layout_height="200dp"
+        android:contentDescription="@string/header_description"
+        android:src="@drawable/div"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Label para el campo de cantidad -->
+
+
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="190dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="56dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:text="@string/label_total"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:background="@color/moradoFondo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_label" />
+
+
+    <TextView
+        android:id="@+id/tv_label"
+        android:layout_width="310dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text="@string/label_calculator"
+        android:textColor="@color/moradoFuerte"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_header"
+        app:layout_constraintVertical_bias="0.032" />
+
+    <TextView
+        android:id="@+id/tv_origen"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="104dp"
+        android:gravity="center"
+        android:text="@string/label_origin"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tv_destino"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_total" />
+
+
+    <TextView
+        android:id="@+id/tv_destino"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="104dp"
+        android:gravity="center"
+        android:text="@string/label_destination"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_origen"
+        app:layout_constraintTop_toBottomOf="@+id/tv_total" />
+
+    <Spinner
+        android:id="@+id/sp_type"
+        style="@style/SpinnerStyle"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toStartOf="@id/sp_t"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_origen"
+        app:layout_constraintWidth_percent="0.4" />
+
+    <Spinner
+        android:id="@+id/sp_t"
+        style="@style/SpinnerStyle"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/sp_type"
+        app:layout_constraintTop_toBottomOf="@id/tv_destino"
+        app:layout_constraintWidth_percent="0.4" />
+
+
+    <EditText
+        android:id="@+id/et_amount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="@string/hint_amount"
+        android:inputType="numberDecimal"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sp_t"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <Button
+        android:id="@+id/btn_calculate"
+        style="@style/buttonblue"
+        android:text="@string/button_convert"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_amount"
+        app:layout_constraintVertical_bias="0.691" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

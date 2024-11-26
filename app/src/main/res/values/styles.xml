@@ -1,0 +1,67 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Estilo para el botón -->
+    <style name="buttonAzul">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">40dp</item>
+        <item name="android:textColor">@android:color/white</item> <!-- Texto blanco -->
+        <item name="android:textSize">16sp</item> <!-- Tamaño del texto -->
+        <item name="android:background">@drawable/button_background</item> <!-- Fondo con bordes redondeados -->
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:layout_gravity">center</item> <!-- Alineación centrada -->
+    </style>
+
+    <!-- Estilo para los Spinners -->
+    <style name="SpinnerStyle">
+        <item name="android:background">@drawable/spinnerbackground</item> <!-- Fondo con bordes redondeados -->
+        <item name="android:textColor">@android:color/white</item> <!-- Texto blanco -->
+        <item name="android:textSize">16sp</item> <!-- Tamaño de texto -->
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="ImageViewStyle">
+        <item name="android:layout_width">380dp</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:src">@drawable/div</item>
+        <item name="android:background">@drawable/rounded_background</item> <!-- Fondo con bordes redondeados -->
+    </style>
+
+    <!-- Estilo para el botón -->
+    <style name="buttonblue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">40dp</item>
+        <item name="android:textColor">@android:color/white</item> <!-- Texto blanco -->
+        <item name="android:textSize">16sp</item> <!-- Tamaño del texto -->
+        <item name="android:background">@drawable/button_rounded_background</item> <!-- Fondo con bordes redondeados -->
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:layout_gravity">center</item> <!-- Alineación centrada -->
+    </style>
+
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

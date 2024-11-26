@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Currency Calculator</string>
+    <string name="header_description">Header Image</string>
+    <string name="label_total">USD - MXN</string>
+    <string name="label_calculator">Currency Calculator</string>
+    <string name="label_origin">ORIGIN</string>
+    <string name="label_destination">DESTINATION</string>
+    <string name="hint_amount">Amount:</string>
+    <string name="button_convert">CONVERT</string>
+</resources>
